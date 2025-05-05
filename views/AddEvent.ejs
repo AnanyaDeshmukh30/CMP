@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/AddTool.css">
+    <link rel="shortcut icon" href="/images/Club Logo.png" type="image/x-icon">
+    <title>Club Management</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="/images/Club Logo.png" alt="">
+                <a href="/">Club Management System (<span>CMS</span>)</a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <!-- <li><a href="/NewEvent">Add Event</a></li> -->
+                <li><a href="/cateogery">Cateogery</a></li>
+                <li><a href="/profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="UploadForm" action="/upload" method="post" enctype="multipart/form-data">
+        <div>
+            <a href="/"><img src="/images/Club Logo.png" alt="Profile Image"></a>
+            <h2>Club Management System (<span>CMS</span>)</h2>
+            <h1>Add a New Club Event</h1>
+            <input type="text" name="eventname" placeholder="Title" required>
+            <input type="text" name="description" placeholder="Description" required>
+            <input type="date" name="date" placeholder="Date" required>
+            <input type="text" name="type" placeholder="Type" required>
+            <input type="file" name="file" placeholder="Event Poster" required>
+            <input type="text" name="link" placeholder="Registration Link" required>
+
+            <select type="text" name="club" placeholder="select your club">
+                <option value="0">select club from below</option>
+                <option value="1">Computer User's Club</option>
+                <option value="2">IEI Students'Chapter</option>
+                <option value="3">GDSC</option>
+                <option value="4">Training</option>
+                <option value="5">Others</option>
+            </select>
+            <button type="submit">Upload</button>
+        </div>
+    </form>
+    <footer>
+        <div class="footer">
+            <div class="info">
+                <h3>Contact CMS</h3>
+                <a href="mailto:CMS@gmail.com" class="bi bi-envelope"> CMS@gmail.com</a>
+                <a href="phone" class="bi bi-phone"> +91 1234567890</a>
+            </div>
+    
+            <div class="links">
+                <h3>Links</h3>
+                <a href="/">Go to Top</a>
+                <a href="/">Home</a>
+                <a href="/NewEvent">Add Event</a>
+                <a href="/cateogery">Clubwise events</a>
+                <a href="/profile">Profile</a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+    
+    
+            <!-- add Event -->
+            <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+    
+            </div>
+    
+            <strong>
+                <p>All Rights Reserved. &copy; Club Management System (<span>CMS</span>) 2024
+            </strong></p>
+    
+    
+        </div>
+    
+    </footer>
+
+    <script src="/javascripts/category.js"></script>
+
+</body>
+
+</html>
